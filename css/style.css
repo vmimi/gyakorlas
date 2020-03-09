@@ -1,0 +1,90 @@
+style
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: url('../images/verypretty.jpg') #f2cef1;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  text-shadow: black 2px 2px 2px;
+  font-family: "Lucida Bright", Georgia, serif;
+  font-size: 130%;
+}
+
+figure {
+    background: yellow;
+    background-color: #fcadad7c;
+    padding: 8px;
+    margin: 0 0 2px 0;
+}
+figure img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+/* Style the header */
+.header {
+  background-color: #ffbdbd;
+  padding: 20px;
+  text-align: center;
+  font-family: "Brush Script MT", cursive;
+  color: white;
+  font-size: 140%;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #ffcccc;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color:#ff8fd4e1;
+  color: white;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 24%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 46%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
