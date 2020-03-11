@@ -5,7 +5,32 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <link rel = "icon" href="images/molannng.png" type = "image/x-icon">  
+        <link rel = "icon" href="images/molannng.png" type = "image/x-icon"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("article").hide();
+            $("#a1").show();
+            $("a").click(function(){
+                var nav = $(this).index();
+                $("a").removeClass("active");
+                $(this).addClass("active");
+                $("article").hide();
+                if(nav == 0){
+                    $("#a1").show();
+                }
+                else if(nav == 6){
+                    $("#a5").show();
+                }
+                else
+                $("#a"+(nav) + "").show();
+            }
+
+            );
+        }
+
+        );
+    </script> 
     </head>
     
     
@@ -23,74 +48,68 @@
             <a href="zene.html">Zene</a>
             <a href="lepegeto.html">Lapozó</a>
         </div>
+        <nav>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </nav>
+        <section>
+            <h2>Híres Youtuberek</h2>
+            <article id="a1">     
+                <figure>
+                    <img src="images/pewdss.jpg">
+                    <figcaption>Felix Arvid Ulf Kjellberg "<a href="https://www.youtube.com/user/PewDiePie">Pewdiepie</a>"</figcaption>
+                </figure>     
+                <p>Svéd youtuber, az egyik legfeliratkozottabb csatorna a youtubeon. Jelenleg Brighton-ban él, 30 éves. 103 Millió feliratkozója van.</p>
+            </article>
+            <article id="a2">
+                <figure>
+                    <img src="images/Jacksepticeye-842x1024.png">
+                    <figcaption>Seán William McLoughlin "<a href="https://www.youtube.com/user/jacksepticeye">Jacksepticeye</a>"</figcaption>
+                </figure>
+                <p>Írországi youtuber, 30 éves és jelenleg Brighton-ban él. 23 Millió 400.000 feliratkozója van.</p>
+             </article>
+            <article id="a3">
+                <figure>
+                    <img src="images/dan.jpg">
+                    <figcaption><a href="https://www.youtube.com/user/danisnotonfire">Daniel James Howell</a> </figcaption>
+                </figure>
+                <p>Angol youtuber, 28 éves és Londonban él Phil Lester-el. 6 Millió 510.000 feliratkozója van.</p>
+             </article>
+            <article id="a4">
+                <figure>
+                    <img src="images/phil.jpg">
+                    <figcaption><a href="https://www.youtube.com/channel/UCHUE4ypXKp7ZkmdWbGJNgJg">Philip Michael Lester</a></figcaption>
+                </figure>
+                <p>Angol youtuber, 33 éves és Londonban él Daniel Howell-al. 4 Millió 150.000 feliratkozója van.</p>
+             </article>
+            <article id="a5">
+                <figure>
+                    <img src="images/ryland.png">
+                    <figcaption><a href="https://www.youtube.com/user/ryanadams7">Ryland Adams</a></figcaption>      
+                </figure>
+                <p>Amerikai youtuber, 28 éves és Shane Dawson jegyese. Los Angelesben élnek jelenleg. 4 Millió 650.000 feliratkozója van.</p>
+             </article>
+    </section>
         <div class="row">
             <div class="column side">
-                <h2>Érdekességek</h2>
-                
-                <figure>
-                <img src="images/yasssgarr.jpg" alt\>
-                <figcaption>
-                    <a href="https://www.youtube.com/user/ImCalledGarrettWatts">Garrett Watts</a> 
-                </figcaption>
-            </figure>
-            <figure>
-                <p>
-                    Garrett Watts az egy 29 éves, amerikai YouTuber. Számos érdekes és szórakoztató videó található a csatornáján és jó barátja Shane Dawson, 30 éves YouTuber, videóiban is sokat szerepel. Egy végtelen kedvességgel rendelkező személyiség. Mindig humoros és egy igazán szerethető személyiség.
-                </p>
-            </figure>
-            <h2>Now I'm a Baby</h2>
-                    <figure>
-                        <img src="images/ab67616d0000b273d75afe65af5e3dd31fad7ba1.jfif" alt\>
-                        <figcaption>
-                            A single album borítója.
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <p>
-                            Február 26-án Garrett feltöltött egy videót amiben 24 óra alatt kísérelt megírni egy dalt. Át szerette volna élni a zeneírás folyamatát. A szám <a href="https://www.youtube.com/watch?v=r_di49qj_F4">"Now I'm a Baby"</a> minden platformon elérhető, én magam meg is vásároltam iTunes-on. Ahhoz képest, hogy nem ért a zeneíráshoz, nagyon jó lett a szám.
-                         </p>
-                    </figure>
-                    
-                </figure>
+                </div>
                 
             </div>
             <div class="column middle">
-                <h2>Garrett Watts</h2>
-                <figure>
-                    <p>
-                        Garrett Watts joined YouTube in May 30, 2012 but did not upload a video until October 25, 2012 which curiously does not feature him. Garret's first videos did not revolve around him and focused on another person called Coco Peru, it was until a video called "Worst Girlfriend: Gaming" where he first started to have viewers and that video gave him a little taste of success. After that he went on a bit of a hiatus and did not release a video for a while. It was until June of 2016 when he released a video anouncing he's back to YouTube and that he would upload a video every week. At this point he was already friends with Shane Dawson, another YouTuber that had about 8 million subscribers at the time, because of this he quickly gained some subscribers and a small following on his channel and social media. He kept uploading videos and gaining more following after appearing in more on Shane's videos which led him on having two million subscribers.
-                    </p>
-                </figure>
-                
-                <h1>Shane Dawson</h1>
-                <figure>
-                    <p>
-                        Shane Lee Yaw (born July 19, 1988), known professionally as Shane Dawson, is an American YouTuber, actor, writer, comedian, director, make-up artist and musician. He was one of the first people to rise to fame on video-sharing website YouTube, and has since maintained an online presence.[4]
-    
-    In 2008, when Dawson was nineteen years old, he joined YouTube and began making videos. He rose to fame on the site, garnering over half a billion views by 2010.[5] Most of his early work consisted of sketch comedy videos, where Dawson would play original characters, impersonate celebrities and make light of popular culture. During this time, Dawson also had a short-lived music career, releasing 6 original songs such as "Superluv!" and numerous parodies of popular music videos. In 2013—inspired by Howard Stern[citation needed]—Dawson launched his podcast, Shane and Friends, which ran for four years and produced 140 episodes. The following year, Dawson released his first and only feature film, Not Cool, and appeared on an accompanying 10-episode docu-series The Chair.[11]
-    
-    In 2015, Dawson began his conspiracy show on YouTube, a video series where he discusses a variety of conspiracy theories. They have become some of his most-viewed videos, including his 2019 web series Conspiracy Series with Shane Dawson,[14] which is two parts in length that total over two hours. In late 2017, Dawson released his first docu-series on YouTube, in which he reconciled with his abusive father. His most-viewed docu-series are about Jake Paul, Jeffree Star and TanaCon.[17]
-    
-    As of 2018, Dawson has released two New York Times best-selling books, I Hate Myselfie and It Gets Worse, and his three YouTube channels have accumulated over 6.5 billion views.[21] Since 2017, he maintains one active channel, shane, which is one of the 100 most-subscribed YouTube channels with 23 million subscribers and over 5 billion views.
-                    </p>
-                </figure>
-                
-            
-            <figure>
             </div>
             <div class="column side">
-                <h1>Említett személyek</h1>
+                <h2>Instagram elérhetőségek</h2>
                 <figure>
                     <img src="images/DDneb8CUQAAOEyU.jpg" alt\>
                     <figcaption>
                         <a href="https://www.youtube.com/user/shane">Shane Dawson</a> képe, Jeffree Star-al közösen készített videójuk után.
-                    </figcaption>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/jeffree.jpg" alt\>
-                    <figcaption>
-                        <a href="https://www.youtube.com/user/jeffreestar">Jeffree Star.</a>
                     </figcaption>
                 </figure>
 
