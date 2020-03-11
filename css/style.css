@@ -45,7 +45,7 @@ figure img {
 
 /* Style the topnav links */
 .topnav a {
-  float: left;
+  float: initial;
   display: block;
   color: #f2f2f2;
   text-align: center;
